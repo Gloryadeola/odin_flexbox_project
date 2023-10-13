@@ -8,27 +8,45 @@ body{
     justify-content: space-between;
     padding: 20px;
     color: aliceblue;
+    
 }
 
+.header{
+    font-size: 50px;
+}
+
+.details{
+    font-size: 50px;
+}
 .second-container{
     display: flex;
     justify-content: center;
     padding: 20px;
     align-items: center;
-    margin-top: 30px;
+    gap: 70px;
+    
+
 }
 
 .intro{
     color: aliceblue;
     height: 300px;
-    width: 400px;
-   margin-right: 50px;
+    width: 400px; 
+     flex: 1;
+     font-size: 50px;
+     margin-bottom: 500px;
+     padding: 30px;
 }
-
+ 
+.jpg{
+    flex: 1;
+    margin-bottom: 50px;
+   
+}
 .button{
     background-color: #17b0e9;
-    width: 80px;
-    border-radius: 5px;
+    width: 200px;
+    border-radius: 10px;
     padding-left: 20px;
     
 }
@@ -39,7 +57,8 @@ body{
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 100px;
+ 
     
 }
 
@@ -48,6 +67,8 @@ body{
     background-color: aliceblue;
     margin-top: 30px;
     padding: 20px;
+   flex: 1;
+   font-size: 50px;
 }
 
 .others{
@@ -56,20 +77,69 @@ body{
     padding: 20px;
     text-align: center;
     list-style: none;
+    font-size: 50px;
+   
 }
 
 
-.last-container{
-    display: flex;
-}
-.ending{
-    background-color: #17b0e9;
-    color: #dfe6ff;
+.ending-container{
+    background-color: aliceblue;
+    border-radius: 5px;
     padding: 20px;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.last{
+    background-color: #17b0e9 ;
+    color: #dfe6ff;
+    padding: 50px;
+    width: 50%;
+    border-radius: 20px;
+    flex: 1;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 40px;
+   
+
+   
 }
 
 .click{
     border-radius: 5px;
-    border: #dfe6ff;
+    border:5px solid white;
+   width: 100px;
+   padding: 10px;
+   padding-left: 10px;
+    
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    color: #dfe6ff;
+    font-size: 70px;
+}
+
+
+@media (max-width: 1250px) {
+    .product-container{
+        flex-direction: column;
+        height:100%
+    }
+
+    .second-container{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .third-container{ 
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .ending-container{
+        flex-direction: column;
+        height: 100%;
+    }
 }
